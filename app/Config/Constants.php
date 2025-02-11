@@ -77,3 +77,15 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7);     // invalid u
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8);       // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9);      // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125);    // highest automatically-assigned error code
+
+
+/*
+ | -------------------------------------------------------------------
+ | custom constants
+ | -------------------------------------------------------------------
+
+ */
+define('ENCRYPTATION_KEY',      'LVO74f$X*E6tZ9$u%xepCgQl$h!D48Ng');
+define('PROJECT_ID',            1);
+define('API_KEY',               '4Oaz3Kc23c6$*GU!lB8ADA$!9Nkf7*1R');
+define('API_BASE_URL',          'http://localhost/API/public/');
