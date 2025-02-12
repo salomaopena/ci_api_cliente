@@ -90,4 +90,17 @@ class ApiModel extends Model
         ];
         return $this->get('all_product_with_stock_between', 'POST', $postData);
     }
+
+    public function add_product($new_product){
+        return $this->get('add_product', 'POST', $new_product);
+    }
+
+    public function update_product($updated_product){
+        return $this->get('update_product', 'PUT', $updated_product);
+    }
+
+    public function delete_product($delete_product){
+        $postData = ['id' => $delete_product];
+        return $this->get('delete_product', 'DELETE', $postData);
+    }
 }
