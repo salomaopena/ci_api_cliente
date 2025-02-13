@@ -15,3 +15,4 @@ $routes->get('/products_with_stock/(:num)/(:num)', 'Main::products_with_stock/$1
 $routes->get('/add_product', 'Main::add_product');
 $routes->get('/update_product/(:num)', 'Main::update_product/$1');
 $routes->get('/delete_product/(:num)', 'Main::delete_product/$1');
+$routes->get('/list_products', 'Main::list_products');

@@ -89,5 +89,20 @@ class Main extends BaseController
         $results = $api->delete_product($id);
         dd($results);
     }
+
+    public function list_products(){
+        // Implementar a lógica para listar todos os produtos
+        // Retornar um response com a lista de produtos
+        $api =  new ApiModel();
+        //$results = $api->get_all_products();
+        $results = $api->get_product_from_category('Carnes');
+
+        $products = $results['data'];
+
+        $data = [
+            'products' => $products['data']
+        ];
+        return view('list_products',$data);
+    }
     
 }
